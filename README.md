@@ -29,8 +29,8 @@ This project demonstrates how to build a production-quality internal tool for bu
 
 ```bash
 # Clone the repository
-git clone https://github.com/MeghanaMareedu13/sales-insights-dashboard.git
-cd sales-insights-dashboard
+git clone https://github.com/MeghanaMareedu13/Interactive-Sales-Dashboard.git
+cd Interactive-Sales-Dashboard
 
 # Install dependencies
 pip install -r requirements.txt
@@ -38,6 +38,24 @@ pip install -r requirements.txt
 # Launch the dashboard
 streamlit run app.py
 ```
+
+## 🌐 Deployment Guide
+
+### Option 1: Streamlit Community Cloud (Recommended)
+1. Push your code to a public GitHub repository.
+2. Sign in to [share.streamlit.io](https://share.streamlit.io/).
+3. Click "New app", then select your repo (`Interactive-Sales-Dashboard`).
+4. Set the Main file path to `app.py`.
+5. Click **Deploy!**
+
+### Option 2: Render
+1. Create a new **Web Service** on [Render](https://render.com/).
+2. Connect your GitHub repository.
+3. **Environment**: `Python`
+4. **Build Command**: `pip install -r requirements.txt`
+5. **Start Command**: `streamlit run app.py --server.port $PORT --server.address 0.0.0.0`
+6. Click **Create Web Service**.
+
 
 ## 📈 Business Use Case
 
